@@ -1,0 +1,55 @@
+#Problem 1:
+print("jennifer")
+print ("jennifer")*3
+print ("jennifer")*100
+#Problem 2:
+number1 = 2
+print (number1)
+number2 = number1/2
+print(number2)
+#Problem 3:
+li = [1, 2, 3]
+print (li[0])
+print (li[1])
+print (li[2])
+hi = (li[0]+li[1]+li[2])
+print (hi)
+#problem 4:
+import turtle
+turtle.penup()
+turtle.goto(100,100)
+turtle.pendown ()
+turtle.begin_fill()
+turtle.goto (100,200)
+turtle.goto (200,200)
+turtle.goto (200,100)
+turtle.goto (100,100)
+turtle.end_fill()
+turtle.pensize (10)
+turtle.pencolor ("red")
+turtle.penup()
+turtle.goto(0,0)
+turtle.pendown()
+turtle.circle(50)
+turtle.end_fill()
+turtle.pencolor ("green")
+turtle.penup()
+turtle.goto(-60,-50)
+turtle.pendown()
+turtle.circle(50)
+turtle.pencolor ("black")
+turtle.penup()
+turtle.goto(-120,0)
+turtle.pendown()
+turtle.circle(50)
+turtle.pencolor ("yellow")
+turtle.penup()
+turtle.goto(-180,-50)
+turtle.pendown()
+turtle.circle(50)
+turtle.pencolor ("blue")
+turtle.penup()
+turtle.goto(-240,0)
+turtle.pendown()
+turtle.circle(50)
+turtle.mainloop()
