@@ -1,4 +1,4 @@
-#1
+#Exercise 1
 '''
 
 def shira():
@@ -8,29 +8,42 @@ def shira():
 
 print (shira())
 '''
-#2
-'''
-a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 2]
-def less_than_5 ():
-	for value in a:
-		if value < 5 :
-			print(value)
+#Exercise 2
+a= [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+for i in range (11):
+	if a [0+i]<5:
+		print(a[0+i])
 
-less_than_5()
-'''
-'''
-#extrassss A
 
-a1 = [1, 1, 2, 3, 2]
-print (a1)
-'''
 
-#extrassss B
-a=[0, 47, 29,10,4,3,209,19]
+#extras:
+#A:
+a= [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 b=[]
-def user_input ():
-	for value in a:
-	person = input("plz write a number")
-		b.append (value > person)
+for i in range (11):
+	if a [0+i]<5:
+			b.append(a[0+i])
+print(b)
 
-user_input()
+
+#B
+a= [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b=[]
+number = int(input('Type a number!!'))
+for i in range (11):
+	if a [0+i]<number:
+			b.append(a[0+i])
+print(b)
+
+
+
+#Exercise 3
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+c=[]
+for i in range (89):
+	if a.count(0+i)>0 and b.count(0+i)>0:
+			c.append(i)
+print(c)
+
+

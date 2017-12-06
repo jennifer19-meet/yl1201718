@@ -53,12 +53,12 @@ Human.sport ("basketball")
 '''
 
 #Extras
+
 class Song(object):
 	def __init__ (self, lyrics):
 		self.lyrics = lyrics
-	def sing_me_a_song(self, lyrics):
-			print(lyrics)
 flower_song = Song(["Roses are red",
 				"Violets are blue",
 				 			 "I wrote this poem for you"])
-flower_sing_me_a_song()
+for i in range(3):
+	print(flower_song.lyrics[0+i])

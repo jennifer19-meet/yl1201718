@@ -30,7 +30,7 @@ turtle.goto(0,0)
 turtle.mainloop()
 '''
 
-
+'''
 #Exercise Three:
 import turtle
 turtle.addshape("1sntGUp.gif")
@@ -49,4 +49,22 @@ def coolshape (times):
 		
 coolshape(360)
 turtle.mainloop()
+'''
 
+#Exercise 4:
+
+import turtle
+x=0
+for i in range (360):
+	turtle.forward(100)
+	turtle.right(40)
+	turtle.forward(60)
+	turtle.right(90)
+	turtle.forward(30)
+	turtle.pu()
+	turtle.home()
+	turtle.pd()
+	turtle.right(x+i)
+	turtle.speed(3000)
+
+turtle.mainloop()

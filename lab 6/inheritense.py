@@ -23,6 +23,50 @@ square1.random_color()
 mainloop()
 
 """
+'''
+#Extras:
+from turtle import *
+
+class Rectangle(Turtle):
+	def __init__(self, width,height):
+		Turtle.__init__(self)
+		self.setheading(90)
+		for i in range (4):
+			if i%2 ==0:
+				self.forward(width)
+				self.right(90)
+			else:
+				self.forward(height)
+				self.right(90)
+hi = Rectangle(100,500)
+mainloop()
+'''
+#Extras Extras:
+from turtle import *
+
+class Rectangle(Turtle):
+	def __init__(self, width,height):
+		Turtle.__init__(self)
+		self.setheading(90)
+		for i in range (4):
+			if i%2 ==0:
+				self.forward(width)
+				self.right(90)
+			else:
+				self.forward(height)
+				self.right(90)
+
+
+
+class Square (Rectangle):
+	def __init__(self,size):
+		Rectangle.__init__(self,size,size)
+
+hii=Square(10)
+mainloop()
+
+
+
 
 #Exercise Two:
 from turtle import *
@@ -51,7 +95,7 @@ class Hexagon(Turtle):
 		self.shape("Hexagon")
 '''
 #hi = Hexagon(0.5)
-
+"""
 #Extras:
 from turtle import *
 class Poly(Turtle):
@@ -72,5 +116,6 @@ class Poly(Turtle):
 dan = Poly (7)
 
 mainloop()
- #Exercise 3:
- 
+"""
+#Exercise 3:
+#DONEEE LOOK UPP
