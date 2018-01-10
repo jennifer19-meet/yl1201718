@@ -74,31 +74,34 @@ rec_count = 0
 class Rectangle (Turtle):
 	def __init__(self, color, width, height, speed):
 		global rec_count
+
 		Turtle.__init__(self)
 		rec_count += 1
+
 		register_shape("my_rec" + str(rec_count), ((width,0), (width,height), (0,height), (0,0)))
 		self.shape("my_rec" + str(rec_count))
-		self.color(color)
+		self.fillcolor(color)
 		self.speed(speed)
 		self.width = width
 		self.height = height
 	def top (self):
 		return self.ycor() + self.height/2
 	def bottom (self):
-		return self.ycor() + self.height/2
+		return self.ycor() - self.height/2
 	def right (self):
 		return self.xcor() + self.width/2
 	def left (self):
-		return self.xcor() + self.width/2
+		return self.xcor() - self.width/2
 
 def check_collision (A, B):
 	if(A.top() >= B.bottom() and A.right() >= B.left() and A.bottom() <= B.top() and A.left() <= B.right()):
 		return True
 
 
-rectangle1 = Rectangle("red",10,30,40)
-rectangle2 = Rectangle("blue", 70,50,30) 
+rectangle1 = Rectangle("red",10,30,4)
+rectangle2 = Rectangle("blue", 70,50,3) 
 rectangle2.goto (100,60)
-
+rectangle1.goto (100,60)
+print(check_collision (rectangle1, rectangle2))
 
 mainloop()
