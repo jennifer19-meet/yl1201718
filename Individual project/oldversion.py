@@ -3,14 +3,7 @@ import time
 import turtle
 from ball import Ball 
 import math
-turtle.bgcolor("black")
-turtle.setup( width = 1500, height = 1500, startx = None, starty = None)
-turtle.pencolor("white")
-score = 0
-turtle.ht()
-turtle.pu()
-turtle.goto(-600,300)
-turtle.write("score = "+ str(score) ,move= False, font=("Papyrus", 30, "normal"))
+
 turtle.tracer(0)
 turtle.colormode(255)
 BALLS=[]
@@ -100,7 +93,6 @@ def check_all_balls_collision():
 
 
 def check_myball_collision():
-	global score 
 	for i in range (len(BALLS)):
 		if collision(MY_BALL,BALLS[i]):
 
@@ -127,11 +119,6 @@ def check_myball_collision():
 				BALLS[i].dy =y_speed3
 				MY_BALL.r = MY_BALL.r +1 
 				MY_BALL.shapesize(MY_BALL.r/10)
-				score = score + 1
-				turtle.clear()
-				turtle.write("score = "+ str(score) ,move= False, font=("Papyrus", 30, "normal"))
-
-
 	return True
 def movearound(event):
 	MY_BALL.goto((event.x - SCREEN_WIDTH),(SCREEN_HEIGHT - event.y))
